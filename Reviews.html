@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<div class="load"></div>
+<body class="review">
+    <nav>
+        <a href="Home.html"><b>HOME</b></a>
+        <a href="About.html"><b>ABOUT</b></a>
+        <a href="Products.html"><b>PRODUCTS</b></a>
+        <a href="Reviews.html" class="active"><b>REVIEWS</b></a>
+        <a href="Contact.html"><b>CONTACT US</b></a>
+        <span></span>
+    </nav>
+
+    <div class="stars">
+        <span class="star" onclick="rate(1)">&#9733;</span>
+        <span class="star" onclick="rate(2)">&#9733;</span>
+        <span class="star" onclick="rate(3)">&#9733;</span>
+        <span class="star" onclick="rate(4)">&#9733;</span>
+        <span class="star" onclick="rate(5)">&#9733;</span>
+    </div>
+
+    <div class="RB2"></div>
+    <b class="dont">Reviews we have so far...Do not forget to Leave Yours</b>
+    <div>
+        <img src="reviewpicture.jpeg" alt="" class="reviewP1">
+        <img src="reviewpicture.webp" alt="" class="reviewP2">
+        <img src="reviewpicture1.webp" alt="" class="reviewP3">
+    </div>
+    <div class="RB"></div>
+    <p id="result"></p>
+    <a href=""><button id="submit">Submit Review</button></a>
+    <p class="leave">Leave a Review</p>
+    <p class="please">Please rate your experience</p>
+
+    <div>
+        <input id="ReviewMessage" type="text" placeholder="write your review" required>
+    </div>
+
+
+    <footer>
+        <p class="footer">&copy; 2026 Megah Clothing. All Rights Reserved</p>
+    </footer>
+
+
+    <script src="pages.js"></script>
+
+</body>
+</html>
