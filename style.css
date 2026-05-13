@@ -1,3 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
 body.home{
     background-image: url('background.jpg');
     background-size: cover;
@@ -227,9 +237,9 @@ nav a{
     font-family: sans-serif;
     font-size: x-large;
     text-decoration: none;
-    text-decoration: none;
     padding: 0px 10px;
     flex-grow: 1;
+    white-space: nowrap;
 }
 nav{
     font-family: sans-serif;
@@ -239,10 +249,11 @@ nav{
     border-radius: 12px 12px 12px 12px;
     display: flex;
     box-shadow: 0px 0px 10px 0px;
-    display: flex;
     width: 55vw;
     margin-left: 21.5%;
     margin-top: 30px;
+    min-width: 600px;
+    max-width: 1200px;
 }
 
 .okay_button{
@@ -469,7 +480,7 @@ nav:hover> :not(:hover){
     width: 2.2vw;
     max-width: 2.5vw;
     position: fixed;
-    left: 62vw;
+    left: 63vw;
 }
 .facebook{
     width: 40px;
@@ -477,13 +488,14 @@ nav:hover> :not(:hover){
     left: 795px;
 }
 .phone{
-    margin-top: 300px;
+    margin-top: 55vh;
 }
 .whatsApp{
-    margin-top:340px;
+    margin-top: 62vh;
 }
 .facebook{
-    margin-top: 377px;
+    margin-top: 69vh;
+    left: 63vw;
 }
 .num, .face_text, .num2{
     font-family: sans-serif;
@@ -1142,7 +1154,7 @@ nav:hover> :not(:hover){
     background-color: transparent;
 }
 .women_inside{
-    margin-top: 7vh;
+    margin-top: 11vh;
 }
 .women_pyjam{
     width: 11vw;
@@ -2636,7 +2648,7 @@ th,td{
 }
 footer{
     position: absolute;
-    bottom: 1vh;
+    bottom: 4vh;
     color: black;
     font-family: sans-serif;
     left: 39vw;
@@ -2650,14 +2662,14 @@ footer{
 }
 .wome{
     position: absolute;
-    top: 94vh;
+    top: 96vh;
     color: black;
     font-family: sans-serif;
     left: 39vw;
 }
 .me{
     position: absolute;
-    top: 94vh;
+    top: 96vh;
     color: black;
     font-family: sans-serif;
     left: 39vw;
@@ -2673,7 +2685,7 @@ footer{
 }
 .stars{
    position: fixed;
-   top: 30vh;
+   top: 28vh;
    right: 15vw;
 }
 #result{
@@ -2699,7 +2711,7 @@ footer{
 }
 #ReviewMessage{
     position: fixed;
-    width: 20vw;
+    width: 23vw;
     padding: 15px;
     min-height: 10vh;
     resize: none;
@@ -2772,4 +2784,84 @@ footer{
     left:32vw;
     top: 57vh;
     border-radius: 8px;
+}
+
+@media (max-width: 1400px) {
+    nav {
+        width: 60vw;
+        margin-left: 20%;
+    }
+    
+    nav a {
+        font-size: large;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: 70vw;
+        margin-left: 15%;
+        min-width: 500px;
+        font-size: medium;
+    }
+    
+    nav a {
+        font-size: large;
+        padding: 0px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 90vw;
+        margin-left: 5%;
+        min-width: auto;
+        font-size: small;
+        padding: 8px 8px;
+        flex-wrap: wrap;
+    }
+    
+    nav a {
+        font-size: large;
+        padding: 0px 6px;
+        flex-basis: 19%;
+    }
+    
+    h2 {
+        padding-left: 20px;
+        font-size: large;
+    }
+    
+    .girl {
+        width: 200px;
+        right: 20px;
+        top: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        width: 95vw;
+        margin-left: 2.5%;
+        font-size: x-small;
+        padding: 5px 5px;
+    }
+    
+    nav a {
+        font-size: medium;
+        padding: 0px 4px;
+        flex-basis: 18%;
+    }
+    
+    h2 {
+        font-size: small;
+        padding-left: 10px;
+        margin-top: 60px;
+    }
+    
+    .girl {
+        width: 150px;
+        right: 10px;
+        top: 120px;
+    }
 }
